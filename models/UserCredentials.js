@@ -5,7 +5,7 @@ const UserCredentials = Mongoose.Schema({
         type : String,
         require : true,
     },
-    encryptedPass : {
+    password : {
         type : String,
         require : true,
     }
