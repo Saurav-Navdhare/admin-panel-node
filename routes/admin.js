@@ -4,10 +4,10 @@ const adminTasks = require("../controllers/admin.js");
 
 // All admin tasks here
 
-router.post("/add-event", adminTasks.addEvent);
-
-router.patch("/edit-event", adminTasks.editEvent);
-
-router.delete("/delete-event", adminTasks.deleteEvent);
+router.post("/event", adminTasks.addEvent)
+      .patch("/event", adminTasks.editEvent)
+      .delete("/event", adminTasks.deleteEvent);
+      
+router.get("/events", adminTasks.getEvents);
 
 module.exports = router;
